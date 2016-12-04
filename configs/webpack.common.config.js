@@ -8,7 +8,10 @@
          loaders: [{
              test: /\.js$/,
              exclude: /node_modules/,
-             loader: 'babel-loader'
+             loader: 'babel-loader',
+             query: {
+                     presets: ['babel-preset-es2015']
+                    }
          }]
      }
  }

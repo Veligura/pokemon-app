@@ -1,4 +1,9 @@
-import 'angular'
+import angular  from 'angular';
+import uiRouter from 'angular-ui-router'; 
+import root from '/src/root'; 
 
 
-console.log('hi there');
+angular.module('app', [
+    'uiRouter',
+    'root'
+])
